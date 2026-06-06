@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumen — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    color: #1d1d1f;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8ed; background: #1c1c1e; }
+    a { color: #5ea0ff; }
+  }
+  h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+  h2 { font-size: 1.3rem; margin: 2.25rem 0 0.5rem; }
+  h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+  p, li { font-size: 1rem; }
+  .meta { color: #6e6e73; margin: 0 0 1.5rem; }
+  a { color: #0066cc; }
+  ul { padding-left: 1.4rem; }
+  li { margin: 0.35rem 0; }
+  hr { border: none; border-top: 1px solid rgba(128,128,128,0.25); margin: 2.5rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="meta"><strong>Lumen</strong><br>
+<strong>Effective date:</strong> 5 June 2026</p>
+
+<h2>1. Introduction</h2>
+<p>This Privacy Policy describes how Lumen (the "Application"), a software application developed and distributed by Kudige Panduranga Shenoy (the "Developer"), handles information when you (the "User") use it. By using the Application, you acknowledge the practices described in this Policy. The Developer is committed to a privacy-by-design approach in which the Application operates locally on your device and the Developer receives no User data.</p>
+
+<h2>2. No collection of information by the Developer</h2>
+<p>The Application does not require an account and does not transmit any information to the Developer. The Developer operates no servers, databases, or backend infrastructure in connection with the Application, and performs no analytics, tracking, profiling, advertising, or telemetry. The Developer does not collect, receive, store, sell, or share any User data of any kind.</p>
+
+<h2>3. On-device processing (default configuration)</h2>
+<p>In its default configuration, the Application processes documents entirely on your device using a locally installed artificial-intelligence model. Text extraction, optical character recognition, and document analysis are performed locally, and no document content is transmitted from your device. The local model files are obtained once, on your instruction, from a third-party model distribution service; that transfer contains no document content and is subject to the distributor's own terms and privacy policy.</p>
+
+<h2>4. Optional third-party AI providers (user-supplied credentials)</h2>
+<p>The Application allows you to optionally enable one or more third-party artificial-intelligence providers by supplying your own application programming interface ("API") credentials for each provider. The available providers, and their respective privacy policies, are:</p>
+<ul>
+  <li><strong>Anthropic, PBC (Claude)</strong> — <a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a></li>
+  <li><strong>OpenAI, L.L.C. (OpenAI)</strong> — <a href="https://openai.com/policies/privacy-policy">https://openai.com/policies/privacy-policy</a></li>
+  <li><strong>Google LLC (Gemini)</strong> — <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+  <li><strong>xAI Corp. (Grok)</strong> — <a href="https://x.ai/legal/privacy-policy">https://x.ai/legal/privacy-policy</a></li>
+</ul>
+<p>Where you enable a provider and initiate an analysis, document data is transmitted directly from your device to that provider, authenticated using your own credentials. Such data is processed by the relevant provider as an independent data controller, in accordance with that provider's privacy policy and the agreement between you and that provider. The Developer is not a party to that transmission, does not receive the data, and exercises no control over the provider's processing of it.</p>
+
+<h3>4.1 Information transmitted</h3>
+<p>In the ordinary course, the Application transmits <strong>extracted text only</strong>, as images are read by optical character recognition and PDF text is extracted on your device prior to transmission. In the following circumstances, additional data is transmitted:</p>
+<p>(a) <strong>Large documents.</strong> A PDF exceeding the applicable inline size limit is uploaded to the provider's file-handling interface (applicable to Anthropic and OpenAI).</p>
+<p>(b) <strong>Quality escalation.</strong> Where an initial text-only analysis yields a low-confidence result, the Application may re-submit the document in its native form (PDF data and/or rendered page images) to obtain an improved result (applicable to Anthropic and OpenAI only).</p>
+<p>(c) <strong>Photo and image naming.</strong> Where you enable the optional photo-naming feature (disabled by default), image files containing little or no readable text are transmitted in full to your selected provider so that it may generate a short visual description for use in the filename. This applies to any enabled cloud provider (Anthropic, OpenAI, Google, or xAI). Images that contain readable text continue to be processed by optical character recognition on your device, and only the resulting text is transmitted.</p>
+<p>Except as described in (a)–(c) above, Google (Gemini) and xAI (Grok) receive extracted text only.</p>
+
+<h3>4.2 Consent</h3>
+<p>Prior to the first transmission to any given provider, the Application presents a one-time disclosure identifying the provider and the categories of information to be transmitted, and requests your express consent. Consent is obtained on a per-provider basis and is automatically revoked if the corresponding credentials are altered or removed.</p>
+
+<h3>4.3 Location lookup (Apple)</h3>
+<p>Photo naming (itself disabled by default) includes a location setting that defaults to <strong>Resolved</strong>. Under Resolved, the Application sends the GPS coordinates embedded in a photo to Apple's geocoding service to determine the city and country for the filename. These coordinates are transmitted to Apple only — not to the Developer and not to any AI provider — and are processed under Apple's privacy policy. Regardless of the default, no coordinates are sent until you have given your separate, explicit consent (you are asked once, before the first lookup). Photos with no embedded GPS coordinates, and the Off and Raw location settings, send nothing.</p>
+
+<h2>5. API credentials</h2>
+<p>API credentials that you supply are stored in the macOS Keychain on your device. Such credentials are used solely to authenticate requests to the provider for which they were supplied. They are not transmitted to the Developer and do not leave your device except as authentication to the applicable provider.</p>
+
+<h2>6. Information stored on your device</h2>
+<p>The Application stores the following within its sandboxed application container on your device. None of this information is transmitted to the Developer:</p>
+<p>(a) name mappings and excluded-name entries used to compose filenames consistently;</p>
+<p>(b) rename-history records that enable renaming operations to be reversed;</p>
+<p>(c) locally installed model files; and</p>
+<p>(d) optional diagnostic logs, as described in Section 7.</p>
+
+<h2>7. Diagnostic logging</h2>
+<p>The Application provides an optional diagnostic-logging feature, which is <strong>disabled by default</strong>. When enabled by you, the Application records document text and AI-provider responses locally for the purpose of diagnosing operational issues. These logs remain on your device, are not transmitted to the Developer or any third party, and may be disabled and deleted by you at any time.</p>
+
+<h2>8. File-system access</h2>
+<p>The Application is sandboxed and may access only those files and folders that you expressly select or provide to it. It does not enumerate or browse your storage. Renaming a file in place requires your one-time authorisation for the folder containing that file.</p>
+
+<h2>9. Children's privacy</h2>
+<p>The Application is not directed to children and does not knowingly collect personal information from any individual.</p>
+
+<h2>10. Changes to this Policy</h2>
+<p>The Developer may update this Policy from time to time. Any revised version will be published at this location and within the Application, identified by a revised effective date. Your continued use of the Application following publication constitutes acknowledgement of the revised Policy.</p>
+
+<h2>11. Contact</h2>
+<p>Enquiries regarding this Policy may be directed to:</p>
+<p><strong>Kudige Panduranga Shenoy</strong><br>
+Email: <a href="mailto:kudige@icloud.com">kudige@icloud.com</a></p>
+
+</body>
+</html>
