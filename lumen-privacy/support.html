@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumen — Support</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    color: #1d1d1f;
+    background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8ed; background: #1c1c1e; }
+    a { color: #5ea0ff; }
+  }
+  h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+  h2 { font-size: 1.3rem; margin: 2.25rem 0 0.5rem; }
+  h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+  p, li { font-size: 1rem; }
+  .meta { color: #6e6e73; margin: 0 0 1.5rem; }
+  a { color: #0066cc; }
+  ul { padding-left: 1.4rem; }
+  li { margin: 0.35rem 0; }
+  hr { border: none; border-top: 1px solid rgba(128,128,128,0.25); margin: 2.5rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Support</h1>
+<p class="meta"><strong>Lumen</strong> — AI file &amp; photo namer</p>
+
+<p>Thanks for using Lumen. If you have a question, a problem, or a suggestion, please get in touch and you will receive a reply as soon as possible.</p>
+
+<h2>Contact</h2>
+<p>Email: <a href="mailto:kudige@icloud.com">kudige@icloud.com</a></p>
+
+<h2>Getting started</h2>
+<ul>
+  <li>Open Lumen. It starts on the <strong>Drop Zone</strong> tab.</li>
+  <li>Drag in a folder to process everything inside it, or drop individual files to rename just those. You can also use <strong>Choose Folder</strong> or <strong>Choose Files</strong>.</li>
+  <li>Click <strong>Process Files</strong>, then review the proposed names on the <strong>Results</strong> tab.</li>
+  <li>Approve the names you want, edit any you wish to change, then click <strong>Execute Renames</strong>. Nothing is renamed without your approval.</li>
+  <li>Changed your mind? The <strong>Revert Renames</strong> tab undoes any previous batch.</li>
+</ul>
+<p>A full User Guide is built into the app under the <strong>Help &amp; Privacy</strong> tab.</p>
+
+<h2>Common questions</h2>
+
+<h3>Is my data private?</h3>
+<p>By default, Lumen processes your files entirely on your Mac using an on-device model, and nothing leaves your device. Cloud providers are optional, off by default, and used only with your own API key after a one-time consent prompt. Full details are in the <a href="https://kudige79.github.io/lumen-privacy/">Privacy Policy</a>.</p>
+
+<h3>The on-device model will not download.</h3>
+<p>The on-device model requires an Apple silicon Mac and a one-time download of several gigabytes over the internet. Open <strong>Settings → AI Provider</strong> and use the Download control. If you are on an Intel Mac, use one of the optional cloud providers with your own API key instead.</p>
+
+<h3>macOS asked for permission to a folder when I renamed files.</h3>
+<p>Lumen is sandboxed and only ever touches files and folders you select. Renaming a file in place needs write access to its parent folder, so macOS presents a standard folder-access panel at the moment you execute renames. This is expected, and you grant it once per folder.</p>
+
+<h3>A Pages, Numbers, or Keynote file did not name well.</h3>
+<p>These files are named from their first-page preview, so they name well only when page one carries identifying text. Otherwise they are routed to the <strong>Unprocessed</strong> tab for quick manual naming rather than being renamed incorrectly.</p>
+
+<hr>
+<p class="meta">See also the <a href="https://kudige79.github.io/lumen-privacy/">Lumen Privacy Policy</a>.</p>
+
+</body>
+</html>
