@@ -43,26 +43,30 @@
 <h2>Getting started</h2>
 <ul>
   <li>Open Lumen. It starts on the <strong>Drop Zone</strong> tab.</li>
-  <li>Drag in a folder to process everything inside it, or drop individual files to rename just those. You can also use <strong>Choose Folder</strong> or <strong>Choose Files</strong>.</li>
+  <li>Drag in a folder to process its supported files, or drop individual files to rename just those. You can also use <strong>Choose Folder</strong> or <strong>Choose Files</strong>.</li>
   <li>Click <strong>Process Files</strong>, then review the proposed names on the <strong>Results</strong> tab.</li>
   <li>Approve the names you want, edit any you wish to change, then click <strong>Execute Renames</strong>. Nothing is renamed without your approval.</li>
-  <li>Changed your mind? The <strong>Revert Renames</strong> tab undoes any previous batch.</li>
+  <li>Changed your mind? The <strong>Revert Renames</strong> tab can restore eligible files from a previous rename run.</li>
 </ul>
 <p>A full User Guide is built into the app under the <strong>Help &amp; Privacy</strong> tab.</p>
 
 <h2>Common questions</h2>
 
 <h3>Is my data private?</h3>
-<p>By default, Lumen processes your files entirely on your Mac using an on-device model, and nothing leaves your device. Cloud providers are optional, off by default, and used only with your own API key after a one-time consent prompt. Full details are in the <a href="https://kudige79.github.io/lumen-privacy/">Privacy Policy</a>.</p>
+<p>By default, document analysis runs on your Mac using an on-device model, and no document content is transmitted. Cloud analysis is optional and off by default, and uses your own API key. Before Lumen first sends file-related content to a provider, it shows a per-provider consent prompt. Lumen asks again if the disclosure materially changes, and photo naming has its own consent. Full details are in the <a href="https://kudige79.github.io/lumen-privacy/">Privacy Policy</a>.</p>
+
+<h3>How do software-update checks work?</h3>
+<p>Automatic update checks are on by default in Lumen 1.2.1. The control is in <strong>Settings → Advanced → Software Updates</strong>.</p>
+<p>When on, Lumen contacts lumen-ai.eu after launch when a daily check is due. The request identifies Lumen and its version; the server also receives your IP address and the time. No document data or Mac system profile is sent. Available updates download from GitHub Releases. Turn this off to stop automatic checks; you can still use Lumen → Check for Updates… at any time.</p>
 
 <h3>The on-device model will not download.</h3>
-<p>The on-device model requires an Apple silicon Mac and a one-time download of several gigabytes over the internet. Open <strong>Settings → AI Provider</strong> and use the Download control. If you are on an Intel Mac, use one of the optional cloud providers with your own API key instead.</p>
+<p>The on-device model requires an Apple-silicon Mac with 24 GB+ memory and a download of approximately 8.26 GB over the internet. Open <strong>Settings → AI Provider</strong> and use the Download control. If you are on an Intel Mac, use one of the optional cloud providers with your own API key instead.</p>
 
 <h3>macOS asked for permission to a folder when I renamed files.</h3>
-<p>Lumen is sandboxed and only ever touches files and folders you select. Renaming a file in place needs write access to its parent folder, so macOS presents a standard folder-access panel at the moment you execute renames. This is expected, and you grant it once per folder.</p>
+<p>For document and photo processing, Lumen is sandboxed and accesses only files and folders you select. Renaming a file in place needs write access to its parent folder, so macOS may present a standard folder-access panel when you execute renames. Lumen remembers access where possible, but macOS may ask again.</p>
 
 <h3>A Pages, Numbers, or Keynote file did not name well.</h3>
-<p>These files are named from their first-page preview, so they name well only when page one carries identifying text. Otherwise they are routed to the <strong>Unprocessed</strong> tab for quick manual naming rather than being renamed incorrectly.</p>
+<p>Lumen reads an embedded PDF or image preview when one is available. Many modern iWork files provide only a first-page preview, so placing identifying text on page one helps. If Lumen cannot extract usable text, the file is routed to the <strong>Unprocessed</strong> tab for quick manual naming.</p>
 
 <hr>
 <p class="meta">See also the <a href="https://kudige79.github.io/lumen-privacy/">Lumen Privacy Policy</a>.</p>
